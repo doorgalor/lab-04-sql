@@ -104,10 +104,13 @@ def plot_counts(groupby):
 def main():
     """Show one filtered group and the counts for the group column."""
     print("=== by group ===")
-    print(get_data_by_group("Alpha"))
+    print(get_data_by_group("laptop"))
 
-    print("=== counts ===")
+    print("=== counts by group ===")
     print(plot_counts("group"))
+
+    print("=== counts by gender ===")
+    print(plot_counts("gender"))
 
 
 if __name__ == "__main__":
