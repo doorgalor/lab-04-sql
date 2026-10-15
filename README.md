@@ -195,7 +195,6 @@ type_mapping = {
     "datetime64[ns]": "DATETIME",
     "object": "VARCHAR(255)",  # safe default varchar length
     "string": "VARCHAR(255)",
-    "str": "VARCHAR(255)",  # default text dtype in pandas 3.x
 }
 ```
 
@@ -301,7 +300,6 @@ Your repository should look roughly like this (other `uv init` files are fine to
 ```text
 lab-04-sql/
 ├── .gitignore
-├── .python-version
 ├── README.md
 ├── MOCK_DATA.csv
 ├── initialize.sql
